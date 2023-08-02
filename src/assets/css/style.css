@@ -108,7 +108,69 @@ button {
   font-size: 14px;
   font-weight: 600;
   width: 300px;
+  margin: 30px 0;
 }
 .all .carry-btn {
   text-align: center;
+}
+
+.banner {
+  background-color: rgb(254, 193, 81);
+}
+
+.banner-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-word {
+  width: 60%;
+}
+
+h2 {
+  font-size: 60px;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  .banner video {
+    width: 300px;
+  }
+}
+@media (max-width: 600px) {
+  .wrapper .flex {
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+}
+@media (max-width: 800px) {
+  .banner .banner-flex {
+    display: block;
+    text-align: center;
+  }
+  .banner .banner-word {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .all .flex-all {
+    display: block;
+  }
+  .all p {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .banner h2 {
+    font-size: 30px;
+  }
+  .banner p {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
