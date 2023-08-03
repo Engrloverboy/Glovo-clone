@@ -97,6 +97,10 @@ button {
   text-align: center;
   font-weight: 300;
 }
+.all p span {
+  background-color: rgb(254, 193, 81);
+  border-radius: 20px;
+}
 .all h3 {
   margin-bottom: 8px;
   text-align: center;
@@ -131,10 +135,11 @@ button {
 h2 {
   font-size: 60px;
   text-align: center;
+  line-height: 63px;
 }
 
 p {
-  font-size: 20px;
+  font-size: 12px;
   text-align: center;
   margin-top: 20px;
 }

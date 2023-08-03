@@ -6,7 +6,7 @@ const Reusesection2 = (props) => {
       <div className="image-2">
         <img src={props.pics} alt="" />
         <h3>{props.subheading}</h3>
-        <p>{props.words}</p>
+        <p>{props.words} <span>{props.yellowtext}</span> </p>
       </div>
     </section>
   );

@@ -1,17 +1,19 @@
-import Multiples from "./components/Multiples";
-import Multiples2 from "./components/Multiples2";
-import Navbar from "./components/Navbar";
-import Bannersection from "./components/Bannersection";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./pages/About";
+import Home from "./pages/Home";
+import Services from "./pages/Services";
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <Navbar />
-      <Bannersection />
-      <Multiples />
-      <Multiples2 />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

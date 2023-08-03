@@ -13,24 +13,25 @@ const Multiples2 = () => {
           pics={Restaurant}
           subheading={"Your city's top restaurants"}
           words={
-            "With a great variety of restaurants you can order your favourite food or explore new restaurants nearby!"
+            "With a great variety of restaurants you can order your favourite food or"
           }
+          yellowtext={"explore new restaurants nearby!"}
         />
 
         <Reusesection2
           pics={Delivery}
           subheading={"Fast Delivery"}
-          words={
-            "Like a flash! Order or send anything in your city and receive it in minutes"
-          }
+          words={"Like a flash! Order or send anything in your city and"}
+          yellowtext={"receive it in minutes"}
         />
 
         <Reusesection2
           pics={Groceries}
           subheading={"Groceries delivery & more"}
           words={
-            "Find anything you need! From supermarkets to shops, pharmacies to florists — if it's in your city order it and receive it."
+            "Find anything you need! From — if it's in your city order it and receive it."
           }
+          yellowtext={"supermarkets to shops, pharmacies to florists"}
         />
       </div>
       <div className="carry-btn">
