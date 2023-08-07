@@ -148,6 +148,33 @@ p {
   text-align: center;
   margin-top: 20px;
 }
+.deliver-country {
+  background-color: rgb(254, 193, 81);
+  .country-picture {
+    text-align: center;
+  }
+  img {
+    width: 200px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+  .countryname-only {
+    border: 1px;
+    padding: 6px 25px;
+    color: black;
+    background-color: rgb(255, 243, 219);
+    margin: 5px;
+    font-weight: 500;
+  }
+  .flex-countryname {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1031px;
+    margin: 0 auto;
+  }
+}
 
 @media (max-width: 500px) {
   .banner {

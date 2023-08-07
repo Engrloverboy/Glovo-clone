@@ -144,6 +144,34 @@ p {
   margin-top: 20px;
 }
 
+.deliver-country {
+  background-color: rgb(254, 193, 81);
+}
+.deliver-country .country-picture {
+  text-align: center;
+}
+.deliver-country img {
+  width: 200px;
+}
+.deliver-country h1 {
+  text-align: center;
+  font-size: 40px;
+}
+.deliver-country .countryname-only {
+  border: 1px;
+  padding: 6px 25px;
+  color: black;
+  background-color: rgb(255, 243, 219);
+  margin: 5px;
+  font-weight: 500;
+}
+.deliver-country .flex-countryname {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1031px;
+  margin: 0 auto;
+}
+
 @media (max-width: 500px) {
   .banner video {
     width: 300px;
