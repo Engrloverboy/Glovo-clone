@@ -138,17 +138,12 @@ h2 {
   line-height: 63px;
 }
 
-p {
-  font-size: 12px;
-  text-align: center;
-  margin-top: 20px;
-}
-
 .deliver-country {
   background-color: rgb(254, 193, 81);
 }
 .deliver-country .country-picture {
   text-align: center;
+  padding: 50px 0 20px;
 }
 .deliver-country img {
   width: 200px;
@@ -168,8 +163,10 @@ p {
 .deliver-country .flex-countryname {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1031px;
+  justify-content: center;
+  max-width: 1056px;
   margin: 0 auto;
+  padding: 20px 0 30px;
 }
 
 @media (max-width: 500px) {
