@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const EachMovie = (props) => {
   return (
-    <Movies className="eachmovies">
+    <Movies className="eachmovies container">
       <img src={props.img} alt="" />
 
       <div className="description">
@@ -21,16 +21,16 @@ const EachMovie = (props) => {
         <div className="text">
           <h5>{props.match}% Match</h5>
           <p className="no">{props.rated}+</p>
-          <h6 className="sea7">{props.duration}</h6>
+          <small className="sea7">{props.duration}</small>
           <h6 className="hd">{props.resolution}</h6>
         </div>
 
         <div className="movie-type">
-          <p>Action</p>
+          <p>{props.type}</p>
           <p>.</p>
-          <p>Comedy</p>
+          <p>{props.types}</p>
           <p>.</p>
-          <p>Suspense</p>
+          <p>{props.typess}</p>
         </div>
       </div>
     </Movies>
@@ -51,9 +51,10 @@ let Movies = styled.div`
     background-color: rgb(20, 20, 20);
     padding: 10px;
     display: none;
+    margin-top: -7px;
   }
     &:hover {
-        transform: scale(1.5);
+        transform: scale(1.2);
       .description {
         display: block;
       }
@@ -79,7 +80,8 @@ let Movies = styled.div`
         padding: 0px 7px;
       }
       .no,
-      h6 {
+      h6,
+      small {
         color: rgb(116, 116, 116);
       }
       h5 {
