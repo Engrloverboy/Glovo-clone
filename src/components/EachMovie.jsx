@@ -70,10 +70,11 @@ let Movies = styled.div`
     .text {
       display: flex;
       justify-content: space-between;
-      width: 65%;
+      width: 75%;
       align-items: center;
       padding: 0px 2px;
       margin: 20px 0;
+      font-size: 12px;
       .hd {
         color: rgb(116, 116, 116);
         border: 1px solid rgb(116, 116, 116);
@@ -100,6 +101,7 @@ let Movies = styled.div`
       display: flex;
       justify-content: space-between;
       width: 65%;
+      font-size: 10px;
     }
   }
 `;
