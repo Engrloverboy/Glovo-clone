@@ -26,11 +26,7 @@ const EachMovie = (props) => {
         </div>
 
         <div className="movie-type">
-          <p>{props.type}</p>
-          <p>.</p>
-          <p>{props.types}</p>
-          <p>.</p>
-          <p>{props.typess}</p>
+          <p>{props.genre}</p>
         </div>
       </div>
     </Movies>
