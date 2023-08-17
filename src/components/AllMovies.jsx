@@ -13,7 +13,7 @@ const AllMovies = () => {
           rated={eachmovies.rated}
           duration={eachmovies.duration}
           resolution={eachmovies.resolution}
-          genre={eachmovies.genre}
+          items={eachmovies.genre}
         />
       ))}
     </Danas>
@@ -26,6 +26,7 @@ let Danas = styled.section`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-color: black;
   .eachmovies {
     width: 20%;
   }

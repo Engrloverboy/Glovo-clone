@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const EachMovie = (props) => {
+  const items = ["Action", "Movie", "Adventure"];
   return (
     <Movies className="eachmovies container">
       <img src={props.img} alt="" />
@@ -26,7 +27,9 @@ const EachMovie = (props) => {
         </div>
 
         <div className="movie-type">
-          <p>{props.genre}</p>
+          {props.items.map((genre) => (
+            <p>{genre}</p>
+          ))}
         </div>
       </div>
     </Movies>
@@ -36,10 +39,8 @@ const EachMovie = (props) => {
 export default EachMovie;
 
 let Movies = styled.div`
-.eachmovies{
-    transform: scale(1)
-    transition: 0.5s;
-}
+transition: 2s;
+
   img {
     width: 100%;
   }
@@ -48,6 +49,7 @@ let Movies = styled.div`
     padding: 10px;
     display: none;
     margin-top: -7px;
+    // transition: 1s;
   }
     &:hover {
         transform: scale(1.2);
@@ -94,10 +96,14 @@ let Movies = styled.div`
     }
     .movie-type {
       color: white;
-      display: flex;
-      justify-content: space-between;
+    //   display: flex;
+    //   justify-content: space-between;
       width: 65%;
       font-size: 10px;
+    }
+    p {
+        margin-right: 7px;
+        display: inline-block;
     }
   }
 `;
