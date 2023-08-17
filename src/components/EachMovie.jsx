@@ -66,7 +66,7 @@ let Movies = styled.div`
     .text {
       display: flex;
       justify-content: space-between;
-      width: 75%;
+      width: 83%;
       align-items: center;
       padding: 0px 2px;
       margin: 20px 0;
